@@ -1,0 +1,11 @@
+<%= link_to "Sair", destroy_user_session_path %>
+
+Ola
+
+<%= link_to "Cadastre-se", new_user_registration_path %>
+ou
+
+<%= link_to "Entrar", new_user_session_path %>
+
+<%= link_to "Personagens", players_path %>
+<%= link_to "Personagem Principal", player_path(current_user.players.first) %>

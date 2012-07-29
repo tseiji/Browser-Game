@@ -1,0 +1,7 @@
+Im free!!!!
+
+<% if user_signed_in? %>
+Logado como <%= current_user.email %>
+<% else %>
+Deslogado
+<% end %>
