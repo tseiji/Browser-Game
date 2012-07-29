@@ -1,7 +1,7 @@
 # encoding: utf-8
 class GoldController < ApplicationController
   def update
-    player = current_user.players.find(params[:player_id]) Player
+    player = current_user.players.find(params[:player_id])
     
     
     if player.change_gold!(params[:id].to_i)
