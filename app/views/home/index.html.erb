@@ -8,6 +8,6 @@ ou
 <%= link_to "Entrar", new_user_session_path %>
 
 <%= link_to "Personagens", players_path %>
-<% unless current_users.players.empty? %>
+<% unless current_user.players.empty? %>
   <%= link_to "Personagem Principal", player_path(current_user.players.first) %>
 <% end %>
